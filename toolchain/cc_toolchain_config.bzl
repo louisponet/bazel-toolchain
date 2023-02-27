@@ -166,9 +166,8 @@ def cc_toolchain_config(
         # Note that for xcompiling from darwin to linux, the native ld64 is
         # not an option because it is not a cross-linker, so lld is the
         # only option.
-        use_lld = True
+        use_lld = False
         link_flags.extend([
-            "-fuse-ld=lld",
             "-Wl,--build-id=md5",
             "-Wl,--hash-style=gnu",
             "-Wl,-z,relro,-z,now",
