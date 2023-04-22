@@ -321,7 +321,7 @@ def cc_toolchain_config(
     # NOTE: Ensure these are listed in toolchain_tools in toolchain/internal/common.bzl.
     tool_paths = {
         "ar": ar_binary,
-        "cpp": tools_path_prefix + "clang-cpp",
+        "cpp": tools_path_prefix + "clang++",
         "dwp": tools_path_prefix + "llvm-dwp",
         "gcc": wrapper_bin_prefix + "cc_wrapper.sh",
         "gcov": tools_path_prefix + "llvm-profdata",
